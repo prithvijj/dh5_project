@@ -10,12 +10,12 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-  var removeBagItems = document.getElementsByClassName("btn-danger");
-  //console.log(removeBagItems);
-  for (var i = 0; i < removeBagItems.length; i++) {
-    var removeButton = removeBagItems[i];
-    removeButton.addEventListener("click", removeBagItem);
-  }
+  // // var removeBagItems = document.getElementsByClassName("btn-danger");
+  // //console.log(removeBagItems);
+  // for (var i = 0; i < removeBagItems.length; i++) {
+  //   var removeButton = removeBagItems[i];
+  //   removeButton.addEventListener("click", removeBagItem);
+  // }
 
   var quantityInputs = document.getElementsByClassName("bag-quantity-input");
   for (var i = 0; i < quantityInputs.length; i++) {

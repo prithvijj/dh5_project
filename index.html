@@ -38,7 +38,7 @@
                         <h4 class="modal-title">Apples</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Tasty Red Apples</p>
+                        <p>An Apple a day keeps the doctor away!</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -101,6 +101,37 @@
                     </div>
                 </div>
             </div>
+
+
+            <div id="modalAbout" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">About Page</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>I created this website during DeltaHacks 5 which took place on 26/27 Jan 2019. This website is my attempt 
+                                    at the Triangle Challenge : Donation Shop Webpage - Food4Kids with the Original Problem statement below :
+                                </p>
+                                <p>
+                                    "Food4Kids is looking for a webpage that will offer donors the ability to purchase specific items that will
+                                     go into bags for the children to receive. Ideally this will be one page that acts as a grocery store for donors
+                                      to pick and choose their items. 
+                                    "
+                                </p>
+                                <p>
+                                    
+                                </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
     <!-- End of Modal Definitions-->
 
@@ -190,7 +221,10 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPurchase" onclick="purchaseFunction();">Purchase</button> 
 
         </center>
-
+        <div align="right">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalAbout">About?</button>
+        </div>
+        
 
 </body>
 </html>
