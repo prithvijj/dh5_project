@@ -30,7 +30,6 @@ function ready() {
     }
 
 
-
 }
 
 function addToBagClicked(event){
@@ -104,8 +103,13 @@ function updateBagTotal() {
 
 
 function purchaseFunction(){
-  alert("Thank you for Donating!");
+  // alert("Thank you for Donating!");
+  var bagRowQuantity = document.getElementsByClassName("bag-quantity-input");
+  for (var i = 0; i < bagRowQuantity.length; i++) {
+    bagRowQuantity[i].value = 0;  
+  }
 
+  setTimeout("location.reload(true)",3000);
 
 }
 
