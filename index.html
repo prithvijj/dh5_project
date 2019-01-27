@@ -2,6 +2,12 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,38 +17,101 @@
     <center>
         <h1>Food4Kids - Donation Shop Webpage </h1>
     </center>
-    <div class="container">
+    <div class="container"><div>
         <h2>Items List</h2>
         
-        <div class="panel-group">
-          <div class="panel panel-default">
+        <div class="panel-group ">
+          <div class="panel panel-default" >
             <div class="panel-heading">Apples</div>
             <div class="panel-body">Tasty Red Apples</div>
             
-            <img src="images/apples.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
-            <br>
-            <button type="button" class="btn btn-success">Add To Bag</button>
-            <button type="button" class="btn btn-info">More Info</button>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">Banana</div>
-            <div class="panel-body">Delicious Bananas</div>
-            <img src="images/bananas.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
-            <br>
-            <button type="button" class="btn btn-success">Add To Bag</button>
-            <button type="button" class="btn btn-info">More Info</button>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">Carrots</div>
-            <div class="panel-body">Cruncy Carrots</div>
-            <img src="images/carrots.png" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
-            <br>
-            <button type="button" class="btn btn-success">Add To Bag</button>
-            <button type="button" class="btn btn-info">More Info</button>
-          </div>
+                <img src="images/apples.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
+                <br>
+                <button type="button" class="btn btn-success">Add To Bag</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalApple"> More Info</button>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Banana</div>
+                <div class="panel-body">Delicious Bananas</div>
+                <img src="images/bananas.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
+                <br>
+                <button type="button" class="btn btn-success">Add To Bag</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalBanana">More Info</button>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Carrots</div>
+                <div class="panel-body">Cruncy Carrots</div>
+                <img src="images/carrots.png" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
+                <br>
+                <button type="button" class="btn btn-success">Add To Bag</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalCarrot" >More Info</button>
+            </div>
         </div>
-      </div>
+
+    </div>
+
+
+    <!-- Modal Definitions-->
+    <div id="modalApple" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Apples</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Tasty Red Apples</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="modalBanana" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Bananas</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Delicious Bananas</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     
+    <div id="modalCarrot" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Carrots</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Cruncy Carrots</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- End of Modal Definitions-->
+
 
 </body>
 </html>

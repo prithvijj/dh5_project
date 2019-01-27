@@ -1,9 +1,18 @@
 body{
-    background: rgb(134, 240, 178);
+    background-color: rgb(230, 12, 12);
+
+}
+body bg{
+    background-color: rgb(100, 240, 178);
 
 }
 
+container{
+    background: rgb(134, 240, 178);
+}
+
 #bg {
+    background: rgb(100, 240, 178);
     position: relative; 
     top: 0%; 
     left: 0%; 
