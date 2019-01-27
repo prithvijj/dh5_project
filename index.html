@@ -23,8 +23,9 @@
         <div class="panel-group ">
           <div class="panel panel-default" >
             <div class="panel-heading">Apples</div>
-            <div class="panel-body">Tasty Red Apples</div>
-            
+            <!--
+                <div class="panel-body">Tasty Red Apples</div>
+            -->
                 <img src="images/apples.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
                 <br>
                 <button type="button" class="btn btn-success">Add To Bag</button>
@@ -34,7 +35,9 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">Banana</div>
+                <!--
                 <div class="panel-body">Delicious Bananas</div>
+                -->
                 <img src="images/bananas.jpg" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
                 <br>
                 <button type="button" class="btn btn-success">Add To Bag</button>
@@ -44,7 +47,9 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">Carrots</div>
+                <!--
                 <div class="panel-body">Cruncy Carrots</div>
+                -->
                 <img src="images/carrots.png" class="img-rounded" alt="Cinque Terre" width="50%" height="50%"> 
                 <br>
                 <button type="button" class="btn btn-success">Add To Bag</button>
@@ -111,6 +116,59 @@
         </div>
 
     <!-- End of Modal Definitions-->
+
+    <center>
+            <h1>Donation Bag</h1>
+    </center>
+
+    <!-- Donation Bag / Cart containing list of items to purchase-->
+    <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="images/apples.jpg" class="img-rounded"  width="25%" height="25%"> Apple</td>
+                  <td>3.99</td>
+                  <td> 
+                    <input class="cart-quantity-input" type="number" value="1">  
+                    <button type="button" class="btn btn-danger">REMOVE</button> </td>
+                </tr>
+                <tr>
+                    <td><img src="images/bananas.jpg" class="img-rounded"  width="25%" height="25%"> Banana</td>
+                    <td>3.99</td>
+                    <td> 
+                        <input class="cart-quantity-input" type="number" value="1">  
+                        <button type="button" class="btn btn-danger">REMOVE</button> 
+                    </td>                
+                </tr>
+                <tr>
+                    <td><img src="images/carrots.png" class="img-rounded"  width="25%" height="25%"> Carrot</td>
+                    <td>3.99</td>
+                    <td>
+                        <input class="cart-quantity-input" type="number" value="1">  
+                        <button type="button" class="btn btn-danger">REMOVE</button> 
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="bag-total">
+              <div class="bag-total-title">Total</div>
+              <span class="cart-total-price">$3.99</span>
+          </div>
+
+        <center>
+                <button type="button" class="btn btn-primary">Purchase</button> 
+
+        </center>
 
 
 </body>
