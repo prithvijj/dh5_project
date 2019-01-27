@@ -101,3 +101,11 @@ function updateBagTotal() {
 
   // }
 }
+
+
+function purchaseFunction(){
+  alert("Thank you for Donating!");
+
+
+}
+
