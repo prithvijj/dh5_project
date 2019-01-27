@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(230, 12, 12);
+    background-color: rgb(209, 248, 218) !important;
 
 }
 body bg{
@@ -31,3 +31,32 @@ container{
     width: 200%;
     height: 200%;
 }  
+
+.bag-total-title{
+    font-size: 40px;
+}
+.bag-total-price{
+    font-size: 40px;
+}
+.table {
+    margin-bottom: 20px;
+}
+
+.bag-item-title{
+    max-width: 80%;
+}
+
+.bag-item-price{
+    max-width: 10%;
+    font-size: 200%;
+    padding-left: 00px;
+    padding-block-end: 100px;
+    padding-right: 100px;
+    position: relative ;
+}
+
+.bg-primary {
+    background-color: #1a52c6;
+}
+
+

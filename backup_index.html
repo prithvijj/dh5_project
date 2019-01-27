@@ -19,14 +19,63 @@
         <h1>Food4Kids - Donation Shop Webpage </h1>
     </center>
     <div class="container"><div>
+        <center>
+        <h2>Items List</h2>
+        </center>
         
-                <!-- <img src="images/apples.jpg" class="img-rounded list-item-image" alt="Cinque Terre" width="50%" height="50%"> 
+        <div class="panel-group ">
+          <div class="panel panel-default" >
+            <div class="panel-heading">Apples
+                <span class='list-item-price'>
+                    1.99
+                </span>
+
+            </div>
+            <!--
+                <div class="panel-body">Tasty Red Apples</div>
+            -->
+                <img src="images/apples.jpg" class="img-rounded list-item-image" alt="Cinque Terre" width="50%" height="50%"> 
                 <br>
                 <button type="button" class="btn btn-success">Add To Bag</button>
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalApple"> More Info</button>
-            </div> -->
+            </div>
 
 
+            <div class="panel panel-default">
+                <div class="panel-heading">Banana
+
+                        <span class='list-item-price'>
+                                2.99
+                            </span>
+                </div>
+                <!--
+                <div class="panel-body">Delicious Bananas</div>
+                -->
+                <img src="images/bananas.jpg" class="img-rounded list-item-image" alt="Cinque Terre" width="50%" height="50%"> 
+                <br>
+                <button type="button" class="btn btn-success">Add To Bag</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalBanana">More Info</button>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Carrots
+                        <span class='list-item-price'>
+                                3.99
+                            </span>
+
+                </div>
+                <!--
+                <div class="panel-body">Cruncy Carrots</div>
+                -->
+                <img src="images/carrots.png" class="img-rounded list-item-image" alt="Cinque Terre" width="50%" height="50%"> 
+                <br>
+                <button type="button" class="btn btn-success">Add To Bag</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalCarrot" >More Info</button>
+            </div>
+        </div>
+
+    </div>
 
 
     <!-- Modal Definitions-->
@@ -92,7 +141,7 @@
 
     <!-- Donation Bag / Cart containing list of items to purchase-->
     <div class="container">
-            <table class="table">
+            <table class="bag-table">
               <thead> 
                 <tr>
                   <th>Item</th>
@@ -113,15 +162,14 @@
                     </td>
                   <td>
                         <div class="bag-item-price">
-                      $1.99
+                      1.99
 
 
                     </div>  
                   </td>
                   <td> 
-                    <input class="bag-quantity-input" type="number" value="1">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalApple"> More Info</button>  
-                    <!-- <button type="button" class="btn btn-danger">REMOVE</button> </td> -->
+                    <input class="bag-quantity-input" type="number" value="1">  
+                    <button type="button" class="btn btn-danger">REMOVE</button> </td>
                 </tr>
                 <tr class="bag-item-row">
                     <td>
@@ -130,14 +178,13 @@
                         </div>
                         <td>
                         <div class="bag-item-price">
-                                $2.99
+                                2.99
                         </div> 
 
                     </td>
                     <td> 
-                        <input class="bag-quantity-input" type="number" value="1">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalBanana"> More Info</button>  
-                        <!-- <button type="button" class="btn btn-danger">REMOVE</button>  -->
+                        <input class="bag-quantity-input" type="number" value="1">  
+                        <button type="button" class="btn btn-danger">REMOVE</button> 
                     </td>                
                 </tr>
                 <tr class="bag-item-row">
@@ -147,28 +194,26 @@
                         </div>
                     <td>
                         <div class="bag-item-price">
-                        $3.99
+                        3.99
                         </div> 
 
 
                     </td>
                     <td>
-                        <input class="bag-quantity-input" type="number" value="1">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalCarrot"> More Info</button>    
-                        <!-- <button type="button" class="btn btn-danger">REMOVE</button>  -->
+                        <input class="bag-quantity-input" type="number" value="1">  
+                        <button type="button" class="btn btn-danger">REMOVE</button> 
                     </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <center>  
           <div class="bag-total">
               <div class="bag-total-title">Total</div>
               <span class="bag-total-price">$3.99</span>
           </div>
-          <br>
 
+        <center>
                 <button type="button" class="btn btn-primary">Purchase</button> 
 
         </center>
